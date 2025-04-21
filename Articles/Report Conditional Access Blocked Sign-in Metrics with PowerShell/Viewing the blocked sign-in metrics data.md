@@ -1,4 +1,4 @@
-Return all the blocked sign-ins between the 1st of April 2025 and the 21st of April 2025, aggregated by 30-minute intervals.
+### Return all the blocked sign-ins between the 1st of April 2025 and the 21st of April 2025, aggregated by 30-minute intervals.
 
 ```Powershell
 $endDate = (Get-Date).ToString("yyyy-MM-ddTHH:mm:ssZ")
@@ -9,7 +9,7 @@ $Uri = "/beta/reports/serviceActivity/getMetricsForConditionalAccessBlockedSignI
 $response = Invoke-MgGraphRequest -Method GET -Uri $Uri | Select -Expand value
 ```
 
-Output snippet
+### Output snippet
 ```PowerShell
 {
     "intervalStartDateTime": "2025-04-01T00:30:00Z",
