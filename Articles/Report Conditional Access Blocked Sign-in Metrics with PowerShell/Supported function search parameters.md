@@ -1,4 +1,4 @@
-### Use Get-Date to formate the date properly for Microsoft Graph
+### Use Get-Date to format the date properly for Microsoft Graph
 
 ```powershell
 $endDate = (Get-Date).ToString("yyyy-MM-ddTHH:mm:ssZ")
